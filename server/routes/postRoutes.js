@@ -38,7 +38,7 @@ router.route('/').post(async(req, res) => {
     prompt,
   })
 
-  res.status(201).json({ sucess: true, data: newPost });
+  res.status(200).json({ sucess: true, data: newPost });
 
  } catch (error) {
    res.status(500).json({ succes: false, message: error })
